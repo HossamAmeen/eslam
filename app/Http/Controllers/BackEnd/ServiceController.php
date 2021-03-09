@@ -1,24 +1,22 @@
 <?php
 
 namespace App\Http\Controllers\BackEnd;
-
+use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Article;
-use App\Http\Requests\BackEnd\NewsRequest;
-use  Auth,File;
-class ArticleController extends BackEndController
+use Auth;
+class ServiceController extends BackEndController
 {
-    public function __construct(Article $model)
+    public function __construct(Service $model)
     {
         parent::__construct($model);
     }
-    public function store(NewsRequest $request){
+    public function store(Request $request){
        
         $requestArray = $request->all();
         if($request->hasFile('image'))
         { 
-            $fileName = $this->uploadImage($request , 530 , 432 );
+            $fileName = $this->uploadImage( $request , 530 , 432 );
           if(isset($requestArray['image']) )
           $requestArray['image'] =  $fileName;
         }
@@ -28,18 +26,15 @@ class ArticleController extends BackEndController
         return redirect()->route($this->getClassNameFromModel().'.index');
     }
 
-    public function update($id , NewsRequest $request){
+    public function update($id , Request $request){
         $requestArray = $request->all();
-        $row = $this->model->FindOrFail($id);
         if($request->hasFile('image'))
         {
             $fileName = $this->uploadImage( $request ,530 , 432 );
           if(isset($requestArray['image']) )
           $requestArray['image'] =  $fileName;
-          if(File::exists($row->image) && 0) {
-            File::delete($row->image);
         }
-        }
+        $row = $this->model->FindOrFail($id);        
         $requestArray['user_id'] = Auth::user()->id;
         $row->update($requestArray);
         session()->flash('action', 'تم التحديث بنجاح');

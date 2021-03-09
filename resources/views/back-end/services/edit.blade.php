@@ -1,7 +1,7 @@
 @extends('back-end.layout.app')
 @php
 
-    $pageTitle = "تعديل المقال" ;
+    $pageTitle = "تعديل الخدمة" ;
  @endphp  
 @section('title')
     {{ $pageTitle }}

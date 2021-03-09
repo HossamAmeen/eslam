@@ -27,7 +27,7 @@ $factory->define(App\Models\User::class, function (Faker $faker) {
 $factory->define(App\Models\Configration::class, function (Faker $faker) {
     return [
         'email' => $faker->safeEmail,
-        'title' =>  $faker->name,
+        'title' => "السلام",
         'en_title' =>  $faker->name,
         'description' => $faker->text,
         'en_description' => $faker->text,
@@ -60,14 +60,21 @@ $factory->define(App\Models\News::class, function (Faker $faker) {
 $factory->define(App\Models\Article::class, function (Faker $faker) {
 
     return [
-        'title' => $faker->name . "عربي",
+        'title' => $faker->name,
         'en_title' => $faker->name,
         'description' => " قبت بالولايات في حين. ان يقوم الدنمارك أخذ, الأمم وقامت المتّبعة ان وقد, كل دول واتّجه وبالتحديد،. قد إحكام الأولى وقوعها، قام, قد بين أواخر الصفحات, عل شيء لإعلان الأمور المتحدة. أعمال باستحداث عن حين, كل عدد لأداء أوروبا الفرنسية, بهيئة اليها لان قد. ومن كثيرة الشّعبين ثم, فصل ٣٠ أوسع الثالث. لان هو ويتّفق الأهداف. كل اتفاق أفريقيا لها, دفّة الإتحاد به، بـ, لإعادة مقاومة الشتوية مكن تم. ",
         'en_description' => $faker->text ,
         'user_id' =>1 ,
     ];
 });
+$factory->define(App\Models\Service::class, function (Faker $faker) {
 
+    return [
+        'name' => $faker->name ,
+        
+        'user_id' =>1 ,
+    ];
+});
 $factory->define(App\Models\Question::class, function (Faker $faker) {
 
     return [

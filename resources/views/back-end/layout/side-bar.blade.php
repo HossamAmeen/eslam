@@ -15,7 +15,7 @@
     <!--Phone Navigation Menu icon start-->
     <div class="phone-nav-box visible-xs">
         <a class="phone-logo" href="index.html" title="">
-            <h1>baseProject</h1>
+            <h1>eslam</h1>
         </a>
         <a class="phone-nav-control" href="javascript:void(0)">
             <span class="fa fa-bars"></span>
@@ -35,18 +35,18 @@
         </li>
 
         @if( Auth::user()->role == 1 )
-        <li>
+        {{-- <li>
             <a id="users"href="{{route('users.index')}}" class="{{is_active('users')}}">
                 <i class="fa fa-group"></i><span>المستخدمين</span>
             </a>
-        </li>
+        </li> --}}
         @endif
         <li>
             <a href="{{route('users.edit' , ['id' => Auth::user()->id])}}" class="{{edit_profle_is_active('users')}}">
                 <i class="fas fa-edit"></i><span>تعديل بيانات الحساب</span>
             </a>
         </li>
-        @if (strpos($briefs->manager, 'galleries') !== false)
+        {{-- @if (strpos($briefs->manager, 'galleries') !== false)
         <li class="{{is_active('galleries')}}">
             <a href="{{route('galleries.index')}}"  class="{{is_active('galleries')}}">
                     <i class="fa fa-image"></i><span>معرض الصور</span>
@@ -65,19 +65,25 @@
                     <i class="far fa-newspaper"></i><span>الأخبار</span>
             </a>
 
-        </li>
+        </li> --}}
         <li class="{{is_active('articles')}}">
             <a href="{{route('articles.index')}}"  class="{{is_active('articles')}}">
                     <i class="fa fa-image"></i><span>المقالات</span>
             </a>
 
         </li>
-        <li class="{{is_active('questions')}}">
+        <li class="{{is_active('services')}}">
+            <a href="{{route('services.index')}}"  class="{{is_active('services')}}">
+                    <i class="fa fa-image"></i><span>الخدمات</span>
+            </a>
+
+        </li>
+        {{-- <li class="{{is_active('questions')}}">
             <a href="{{route('questions.index')}}"  class="{{is_active('questions')}}">
                     <i class="fa fa-question"></i><span>الأسئله الشائعه</span>
             </a>
 
-        </li>
+        </li> --}}
 
         <li >
             <a class="dropdown-item" href="{{ route('logout') }}"
