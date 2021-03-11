@@ -5,20 +5,20 @@
   <title>El Salem Anti Bugs</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="assets/imgs/logo.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
+  <link rel="shortcut icon" href="{{asset('assets/imgs/logo.ico')}}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/css/bootstrap-rtl.min.css')}}">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="assets/css/rtl.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="{{asset('assets/css/rtl.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
 
 <body>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-dark-custum ">
     <a class="navbar-brand " href="index.html">
-      <img class="navbar-brand-img" src="assets/imgs/logo.png" alt="السالم لمكافحة الحشرات">
+      <img class="navbar-brand-img" src="{{asset('assets/imgs/logo.png')}}" alt="السالم لمكافحة الحشرات">
       <p class="navbar-bran-div">
         <span>
            السالم لمكافحة الحشرات<br>El Salem Anti Bugs
@@ -70,7 +70,7 @@
       <div class="row articles-row card-deck">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 item-col">
           <div class="card" style="padding: 30px;">
-            <img src="assets/imgs/art-1.png" class="card-img-top" alt="ابادة البعوض" style="width: 70%;">
+            <img src="{{asset('assets/imgs/art-1.png')}}" class="card-img-top" alt="ابادة البعوض" style="width: 70%;">
             <div class="card-body" style="padding: 1rem 0px;">
               <h5 class="card-title text-right"><b></b></h5>
               <p class="card-text">
@@ -89,7 +89,7 @@
       <div class="row footer-row">
         <div class="col-sm-12">
           <div class="footer-r">
-            <img class="footer-img" src="assets/imgs/logo.png">
+            <img class="footer-img" src="{{asset('assets/imgs/logo.png')}}">
             <p class="paragraph-footer">
               <span style="font-weight: bold;">
                 السالم لمكافحة الحشرات
@@ -113,10 +113,10 @@
         <div class="col-5">
           <div class="footer-sm-r">
             <a href="http://www.fb.com" target="_blank">
-              <img class="footer-icon" src="assets/imgs/facebookIcon.png">
+              <img class="footer-icon" src="{{asset('assets/imgs/facebookIcon.png')}}">
             </a>
             <a href="http://www.instagram.com" target="_blank">
-              <img class="footer-icon" src="assets/imgs/whatsappIcon.png">
+              <img class="footer-icon" src="{{asset('assets/imgs/whatsappIcon.png')}}">
               </a>
           </div>
         </div>
@@ -133,9 +133,9 @@
 
   </footer>
 
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="{{asset('assets/js/jquery.js')}}"></script>
+  <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('assets/js/script.js')}}"></script>
   <script>
     $("#scrollToTop").click(function () {
       window.location.href = "tel:+0";

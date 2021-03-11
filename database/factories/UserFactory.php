@@ -10,7 +10,7 @@ use Faker\Generator as Faker;
 
 
 
-// $users = App\Models\User::pluck('id')->toArray();
+$users = App\Models\User::pluck('id')->toArray();
 
 $factory->define(App\Models\User::class, function (Faker $faker) {
 
@@ -40,8 +40,6 @@ $factory->define(App\Models\Configration::class, function (Faker $faker) {
         'video2' =>"https://www.youtube.com/embed/AnBHcM-tZsM" ,
         'youtube' =>"https://www.youtube.com" ,
         'user_id' =>1 ,
-
-
     ];
 });
 
