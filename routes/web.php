@@ -21,5 +21,5 @@ Route::prefix('admin')->group(function(){
         Route::resource('videos', 'VideoController'); 
     });
 });
-Route::get('/', 'FrontEnd/HomeController@index')->name('home');
-Route::get('article/{articleId}', 'FrontEnd/HomeController@article')->name('article');
+Route::get('/', 'FrontEnd\HomeController@index')->name('home');
+Route::get('article/{articleId}', 'FrontEnd\HomeController@article')->name('article');
