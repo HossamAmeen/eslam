@@ -22,4 +22,4 @@ Route::prefix('admin')->group(function(){
     });
 });
 Route::get('/', 'FrontEnd/HomeController@index')->name('home');
-Route::get('article/{articleId}', 'HomeController@article')->name('article');
+Route::get('article/{articleId}', 'FrontEnd/HomeController@article')->name('article');
