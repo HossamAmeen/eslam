@@ -10,9 +10,7 @@ use Faker\Generator as Faker;
 
 
 
-$users = App\Models\User::pluck('id')->toArray();
-
-
+// $users = App\Models\User::pluck('id')->toArray();
 
 $factory->define(App\Models\User::class, function (Faker $faker) {
 
