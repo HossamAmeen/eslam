@@ -9,7 +9,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('{!! asset('web/img/slider-img1.png') !!}')">
+        <div class="carousel-item active" style="background-image: url('{!! asset('front-site/img/slider-img1.png') !!}')">
           <div class="overlay"></div>
                 <div class="slide-content">
                   <h3 class="wow bounceInUp">لماذا مشروع صحتك</h3>
@@ -20,7 +20,7 @@
                 </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item " style="background-image: url('{!! asset('web/img/slider-img1.png') !!}')">
+        <div class="carousel-item " style="background-image: url('{!! asset('front-site/img/slider-img1.png') !!}')">
           <div class="overlay"></div>
                 <div class="slide-content">
                   <h3 class="wow bounceInUp">لماذا مشروع صحتك</h3>
@@ -31,7 +31,7 @@
                 </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item " style="background-image: url('{!! asset('web/img/slider-img1.png') !!}')">
+        <div class="carousel-item " style="background-image: url('{!! asset('front-site/img/slider-img1.png') !!}')">
           <div class="overlay"></div>
                 <div class="slide-content">
                   <h3 class="wow bounceInUp">لماذا مشروع صحتك</h3>
@@ -76,25 +76,25 @@
       <div class="row">
         <div class="col-lg-3 col-6 wow bounceInUp">
           <div class="box-info">
-            <img src="{{asset('web/img/money.png')}}" class="img-fluid" alt="عائد ربح سنوى">
+            <img src="{{asset('front-site/img/money.png')}}" class="img-fluid" alt="عائد ربح سنوى">
             <h5 class="mt-4">عائد ربح سنوى</h5>
           </div>
         </div>
         <div class="col-lg-3 col-6 wow bounceInUp mb-2">
           <div class="box-primary">
-            <img src="{{asset('web/img/partner.png')}}" class="img-fluid" alt="شريك فى العقار">
+            <img src="{{asset('front-site/img/partner.png')}}" class="img-fluid" alt="شريك فى العقار">
             <h5 class="mt-4">شريك فى العقار</h5>
           </div>
         </div>
         <div class="col-lg-3 col-6 wow bounceInUp mb-2">
           <div class="box-info">
-            <img src="{{asset('web/img/stethoscope.png')}}" class="img-fluid" alt="مظلة طبية">
+            <img src="{{asset('front-site/img/stethoscope.png')}}" class="img-fluid" alt="مظلة طبية">
             <h5 class="mt-4">مظلة طبية</h5>
           </div>
         </div>
         <div class="col-lg-3 col-6 wow bounceInUp mb-2">
           <div class="box-primary">
-            <img src="{{asset('web/img/Installment.png')}}" class="img-fluid" alt="بالتقسيط">
+            <img src="{{asset('front-site/img/Installment.png')}}" class="img-fluid" alt="بالتقسيط">
             <h5 class="mt-4">بالتقسيط</h5>
           </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="container">
               <div class="row align-items-baseline">
                 <div class="col-md-1 col-3">
-                  <img src="{{asset('web/img/timeline-img1.png')}}" class="img-fluid" alt="">
+                  <img src="{{asset('front-site/img/timeline-img1.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-11 col">
                   <h5 class="text-white">ستة اشهر لتسويق المشروع</h5>
@@ -163,7 +163,7 @@
             <div class="container">
               <div class="row align-items-baseline">
                 <div class="col-md-1 col-3">
-                  <img src="{{asset('web/img/timeline-img2.png')}}" class="img-fluid" alt="">
+                  <img src="{{asset('front-site/img/timeline-img2.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-11 col">
                   <h5 class="text-white">سنة ونصف لتجهيز المشروع وبداية التشغيل</h5>
@@ -177,7 +177,7 @@
             <div class="container">
               <div class="row align-items-baseline">
                 <div class="col-md-1 col-3">
-                  <img src="{{asset('web/img/timeline-img3.png')}}" class="img-fluid" alt="">
+                  <img src="{{asset('front-site/img/timeline-img3.png')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-11 col">
                   <h5 class="text-white">عام على المشروع لعمل تقييم شامل للأرباح وتوزيعها على المساهمين</h5>
@@ -251,7 +251,7 @@
             الافراد .</p>
         </div>
         <div class="col-lg-4">
-          <img src="{{asset('web/img/coEconomy.png')}}" class="img-fluid" alt="coEconomy">
+          <img src="{{asset('front-site/img/coEconomy.png')}}" class="img-fluid" alt="coEconomy">
         </div>
       </div>
     </div>

@@ -11,20 +11,20 @@
   {{-- <title>{{$brefs->title}} - {{$pageTitle}}</title> --}}
   <title> {{ config('app.name' . $pageTitle , $brefs->title .'-'. $pageTitle) }}</title>
   <!-- Favicon -->
-  <link rel="icon" href="{{asset('web/img/favicon.png')}}" sizes="16x16" type="image/png">
+  <link rel="icon" href="{{asset('front-site/img/favicon.png')}}" sizes="16x16" type="image/png">
   <!-- Bootstrap core CSS -->
-  <link href="{{asset('web/vendor/bootstrapRTL/css/bootstrap-rtl.min.css')}}" rel="stylesheet">
+  <link href="{{asset('front-site/vendor/bootstrapRTL/css/bootstrap-rtl.min.css')}}" rel="stylesheet">
   <!-- fontawesome -->
-  <link href="{{asset('web/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+  <link href="{{asset('front-site/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- Light Box Master -->
-    <link href="{{asset('web/vendor/lightbox2-master/css/lightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('front-site/vendor/lightbox2-master/css/lightbox.min.css')}}" rel="stylesheet">
   <!-- Animate css -->
-  <link href="{{asset('web/vendor/wow/animate.css')}}" rel="stylesheet">
+  <link href="{{asset('front-site/vendor/wow/animate.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{asset('web/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('front-site/css/style.css')}}" rel="stylesheet">
   <!-- Media Queries -->
-  <link rel="stylesheet" href="{{asset('web/css/media-query.css')}}">
+  <link rel="stylesheet" href="{{asset('front-site/css/media-query.css')}}">
 
 </head>
 
@@ -34,7 +34,7 @@
         <nav class="navbar mainNav navbar-expand-lg">
             <div class="container">
               <a class="navbar-brand" href="{{route('index')}}">
-                <img src="{{asset('web/img/logo.png')}}" alt="Logo">
+                <img src="{{asset('front-site/img/logo.png')}}" alt="Logo">
               </a>
               <button class="navbar-toggler navbar-toggler-left ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -98,7 +98,7 @@
       <div class="container">
         <div class="row align-items-baseline">
           <div class="col-lg-5 col-12 text-center">
-            <img src="{{asset('web/img/logo.png')}}" width="100" class="img-fluid mb-3" alt="Footer Logo">
+            <img src="{{asset('front-site/img/logo.png')}}" width="100" class="img-fluid mb-3" alt="Footer Logo">
             <p class="text-white">
               مشروع إنشاء اكبرمجمع طبي تخصصى بوسط مدينة أسيوط احدى مشروعات مجموعة ( استثمر) للاقتصاد التشاركي
             </p>
@@ -159,12 +159,12 @@
     </footer>
   
   <!-- Bootstrap core JavaScript -->
-  <script src="{{asset('web/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('web/vendor/bootstrapRTL/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('web/vendor/sticky/jquery.sticky.js')}}"></script>
-  <script src="{{asset('web/vendor/lightbox2-master/js/lightbox.min.js')}}"></script>
-  <script src="{{asset('web/vendor/wow/wow.min.js')}}"></script>
-  <script src="{{asset('web/js/scripts.js')}}"></script>
+  <script src="{{asset('front-site/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('front-site/vendor/bootstrapRTL/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('front-site/vendor/sticky/jquery.sticky.js')}}"></script>
+  <script src="{{asset('front-site/vendor/lightbox2-master/js/lightbox.min.js')}}"></script>
+  <script src="{{asset('front-site/vendor/wow/wow.min.js')}}"></script>
+  <script src="{{asset('front-site/js/scripts.js')}}"></script>
 
 </body>
 

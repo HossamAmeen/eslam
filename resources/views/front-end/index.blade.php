@@ -5,20 +5,20 @@
   <title>{{$configration->title}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="{{asset('web/assets/imgs/logo.ico')}}" type="image/x-icon" />
-  <link rel="stylesheet" href="{{asset('web/assets/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{asset('web/assets/css/bootstrap-rtl.min.css')}}">
+  <link rel="shortcut icon" href="{{asset('front-site/assets/imgs/logo.ico')}}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{asset('front-site/assets/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('front-site/assets/css/bootstrap-rtl.min.css')}}">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="{{asset('web/assets/css/rtl.css')}}">
-  <link rel="stylesheet" href="{{asset('web/assets/css/style.css')}}">
+  <link rel="stylesheet" href="{{asset('front-site/assets/css/rtl.css')}}">
+  <link rel="stylesheet" href="{{asset('front-site/assets/css/style.css')}}">
 </head>
 
 <body>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-dark-custum ">
     <a class="navbar-brand " href="{{url('/')}}">
-      <img class="navbar-brand-img" src="{{asset('web/assets/imgs/logo.png')}}" alt="السالم لمكافحة الحشرات">
+      <img class="navbar-brand-img" src="{{asset('front-site/assets/imgs/logo.png')}}" alt="السالم لمكافحة الحشرات">
       <p class="navbar-bran-div">
         <span>
           {{$configration->title}}<br>{{$configration->en_title}}
@@ -63,16 +63,16 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{{asset('web/assets/imgs/carousel1.jpg')}}" class="d-block w-100" alt="...">
+          <img src="{{asset('front-site/assets/imgs/carousel1.jpg')}}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{{asset('web/assets/imgs/carousel2.jpg')}}" class="d-block w-100" alt="...">
+          <img src="{{asset('front-site/assets/imgs/carousel2.jpg')}}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{{asset('web/assets/imgs/carousel3.jpg')}}" class="d-block w-100" alt="...">
+          <img src="{{asset('front-site/assets/imgs/carousel3.jpg')}}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="{{asset('web/assets/imgs/carousel4.jpg')}}" class="d-block w-100" alt="...">
+          <img src="{{asset('front-site/assets/imgs/carousel4.jpg')}}" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -193,7 +193,7 @@
       <div class="row footer-row">
         <div class="col-sm-12">
           <div class="footer-r">
-            <img class="footer-img" src="{{asset('web/assets/imgs/logo.png')}}">
+            <img class="footer-img" src="{{asset('front-site/assets/imgs/logo.png')}}">
             <p class="paragraph-footer">
               <span style="font-weight: bold;">
                 {{$configration->title}}
@@ -218,27 +218,27 @@
           <div class="footer-sm-r">
             @if (isset($configration->facebook))
             <a href="{{ $configration->facebook }}" target="_blank">
-              <img class="footer-icon" src="{{asset('web/assets/imgs/facebookIcon.png')}}">
+              <img class="footer-icon" src="{{asset('front-site/assets/imgs/facebookIcon.png')}}">
             </a>
             @endif
             @if (isset($configration->whatsapp))
             <a href="{{ $configration->whatsapp }}" target="_blank">
-              <img class="footer-icon" src="{{asset('web/assets/imgs/whatsappIcon.png')}}">
+              <img class="footer-icon" src="{{asset('front-site/assets/imgs/whatsappIcon.png')}}">
             </a>
             @endif
             @if (isset($configration->instagram))
             <a href="{{ $configration->instagram }}" target="_blank">
-              <img class="footer-icon" src="{{asset('web/assets/imgs/instagramIcon.png')}}">
+              <img class="footer-icon" src="{{asset('front-site/assets/imgs/instagramIcon.png')}}">
             </a>
             @endif
             @if (isset($configration->twitter))
             <a href="{{ $configration->twitter }}" target="_blank">
-              <img class="footer-icon" src="{{asset('web/assets/imgs/twitterIcon.png')}}">
+              <img class="footer-icon" src="{{asset('front-site/assets/imgs/twitterIcon.png')}}">
             </a>
             @endif
             @if (isset($configration->youtube))
             <a href="{{ $configration->youtube }}" target="_blank">
-              <img class="footer-icon" src="{{asset('web/assets/imgs/youtubeIcon.png')}}">
+              <img class="footer-icon" src="{{asset('front-site/assets/imgs/youtubeIcon.png')}}">
             </a>
             @endif
             
@@ -258,9 +258,9 @@
 
   </footer>
 
-  <script src="{{asset('web/assets/js/jquery.js')}}"></script>
-  <script src="{{asset('web/assets/js/bootstrap.min.js')}}"></script>
-  <script src="{{asset('web/assets/js/script.js')}}"></script>
+  <script src="{{asset('front-site/assets/js/jquery.js')}}"></script>
+  <script src="{{asset('front-site/assets/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('front-site/assets/js/script.js')}}"></script>
   <script>
     $("#scrollToTop").click(function () {
       window.location.href = "tel:+{{$configration->phone}}";
