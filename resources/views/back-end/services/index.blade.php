@@ -25,7 +25,7 @@
                             <tr>
                             <th>#</th>
                             <th>اسم الخدمه</th>
-                         
+                            <th>وصف الخدمه</th>
                                 <th>الصورة</th>
                                 <th>المستخدم</th>
                                 <th></th>
@@ -36,7 +36,7 @@
                                  <tr>
                                     <td> {{$row_num++}}</td>
                                     <td>{{$item->name}}</td>
-                                  
+                                    <td>{{$item->description}}</td>
                                   
                                     <td>  <img src="{{asset($item->image)}}" height="60px" width="60px"></td>
                                     

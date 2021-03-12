@@ -110,6 +110,20 @@
                                       @enderror
                                 </div>
                             </div>
+                            @php $input = "whatsapp"; @endphp
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">whatsapp</label>
+
+                                <div class="col-lg-10">
+                                    <input type="text" name="{{ $input }}"  value="{{ isset($row) ? $row->{$input} : Request::old($input) }} "
+                                      class="form-control">
+                                      @error($input)
+                                      <span class="invalid-feedback" role="alert">
+                                               <strong>{{ $message }}</strong>
+                                      </span>
+                                      @enderror
+                                </div>
+                            </div>
                             @php $input = "video"; @endphp
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">رابط الفديو الأول</label>

@@ -13,11 +13,11 @@ class HomeController extends Controller
     protected $lang;  
     public function __construct()
     {
-        if(  request()->segment(1) === null ) {
-            $this->lang = "ar";
-        }
-        else
-        $this->lang = request()->segment(1);
+        // if(  request()->segment(1) === null ) {
+        //     $this->lang = "ar";
+        // }
+        // else
+        // $this->lang = request()->segment(1);
        
     }
     public  function  change_language($lang){
@@ -73,12 +73,12 @@ class HomeController extends Controller
         return view("front-end.index" , compact('pageTitle'  ,'articles', 'services'));
     }
     public function article($id){
-        $data = Article::find($id);
-        if( strlen($data->title)> 50 )
-        $pageTitle  = $data->title;
+        $article = Article::find($id);
+        if( strlen($article->title)> 50 )
+        $pageTitle  = $article->title;
         else
-        $pageTitle  = substr($data->title , 0 , 50 );     
-        return view('front-end.article', compact('pageTitle' , 'data' , 'datas'));
+        $pageTitle  = substr($article->title , 0 , 50 );     
+        return view('front-end.article', compact('pageTitle' , 'article'));
     }
 
   

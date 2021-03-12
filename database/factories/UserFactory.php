@@ -25,20 +25,21 @@ $factory->define(App\Models\User::class, function (Faker $faker) {
 $factory->define(App\Models\Configration::class, function (Faker $faker) {
     return [
         'email' => $faker->safeEmail,
-        'title' => "السلام",
-        'en_title' =>  $faker->name,
-        'description' => $faker->text,
+        'en_title' => "El Salem Anti Bugs",
+        'title' =>  "السالم لمكافحة الحشرات",
+        'description' => "شركة السالم لمكافحة الحشرات هى افضل شركة ابادة حشرات بشهادة عملائنا ,نستخدم مبيدات عالية الجودة ,جميع عمالنا مدربين على اتخاذ اللازم فى اصعب المواقف ننتظر مكالماتكم ونسعد بالخدمة",
         'en_description' => $faker->text,
         'home_description' => $faker->text,
         'en_home_description' => $faker->text,
-        'phone' => $faker->e164PhoneNumber,
-        'address' =>$faker->address ,
+        'phone' => "01010079798",
+        'whatsapp' => "01010079798",
+        'address' =>"مصر - أسيوط - شارع الجمهورية امام فرع فودافون" ,
         'facebook' => "https://www.facebook.com/",
-        'twitter' => "https://twitter.com/",
-        'instagram' => "https://www.instagram.com/", //
+        // 'twitter' => "https://twitter.com/",
+        // 'instagram' => "https://www.instagram.com/", //
         'video' =>"https://www.youtube.com/embed/AnBHcM-tZsM" ,
         'video2' =>"https://www.youtube.com/embed/AnBHcM-tZsM" ,
-        'youtube' =>"https://www.youtube.com" ,
+        // 'youtube' =>"https://www.youtube.com" ,
         'user_id' =>1 ,
     ];
 });
@@ -67,7 +68,8 @@ $factory->define(App\Models\Service::class, function (Faker $faker) {
 
     return [
         'name' => $faker->name ,
-        
+        'description' => "ابادة فورية ونهائية لجميع الزواحف كالثعابين بدون رجعه
+        ",
         'user_id' =>1 ,
     ];
 });

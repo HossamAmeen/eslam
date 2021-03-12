@@ -12,11 +12,11 @@ class BackEndController extends Controller
 {
 
     protected $model;
-
-    public function __construct(Model $model)
+    protected $limitItem;
+    public function __construct(Model $model , $limitItem = 0)
     {
         $this->model = $model;
-
+        $this->limitItem = $limitItem ;
     }
 
     public function index()
@@ -27,7 +27,11 @@ class BackEndController extends Controller
         if (!empty($with)) {
             $rows = $rows->with($with);
         }
+        if($this->limitItem != 0)
+        $rows = $rows->orderBy('id', 'DESC')->get()->take(4);
+        else
         $rows = $rows->orderBy('id', 'DESC')->get();
+
         $moduleName = $this->pluralModelName();
         $sModuleName = $this->getModelName();
         $routeName = $this->getClassNameFromModel();

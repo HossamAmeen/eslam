@@ -18,8 +18,8 @@ class AppServiceProvider extends ServiceProvider
     {
         try {
             DB::connection()->getPdo();
-            $briefs = Configration::find(1);
-             View::share('briefs',$briefs );
+            $configration = Configration::find(1);
+             View::share('configration',$configration );
 
         }
          catch (\Exception $e) {

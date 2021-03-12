@@ -11,7 +11,7 @@ class ArticleController extends BackEndController
 {
     public function __construct(Article $model)
     {
-        parent::__construct($model);
+        parent::__construct($model , 4);
     }
     public function store(NewsRequest $request){
        

@@ -46,7 +46,7 @@
                 <i class="fas fa-edit"></i><span>تعديل بيانات الحساب</span>
             </a>
         </li>
-        {{-- @if (strpos($briefs->manager, 'galleries') !== false)
+        {{-- @if (strpos($configration->manager, 'galleries') !== false)
         <li class="{{is_active('galleries')}}">
             <a href="{{route('galleries.index')}}"  class="{{is_active('galleries')}}">
                     <i class="fa fa-image"></i><span>معرض الصور</span>
