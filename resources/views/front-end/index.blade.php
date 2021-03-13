@@ -174,7 +174,7 @@
             <a href="{{url('article/'.$article->id)}}">
               <img src="{{asset($article->image)}}" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title text-right"><b>{{ $article->name }}</b></h5>
+                <h5 class="card-title text-right"><b>{{ $article->title }}</b></h5>
                 <p class="card-text">
                  {!! mb_substr($article->description,0,200,'UTF-8') !!}.....
                  {{-- {{ mb_substr($article->description,0,200,'UTF-8') }} --}}
@@ -222,10 +222,11 @@
             </a>
             @endif
             @if (isset($configration->whatsapp))
-            <a href="{{ $configration->whatsapp }}" target="_blank">
+            <a href="https://wa.me/{{ $configration->whatsapp }}" target="_blank">
               <img class="footer-icon" src="{{asset('front-site/assets/imgs/whatsappIcon.png')}}">
             </a>
             @endif
+           
             @if (isset($configration->instagram))
             <a href="{{ $configration->instagram }}" target="_blank">
               <img class="footer-icon" src="{{asset('front-site/assets/imgs/instagramIcon.png')}}">
@@ -255,7 +256,7 @@
     <button type="button" id="scrollToTop" class="btn btn-to-top">
       <i class="fas fa-phone-alt"></i>
     </button>
-
+    
   </footer>
 
   <script src="{{asset('front-site/assets/js/jquery.js')}}"></script>
