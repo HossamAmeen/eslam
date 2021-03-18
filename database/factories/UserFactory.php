@@ -29,7 +29,7 @@ $factory->define(App\Models\Configration::class, function (Faker $faker) {
         'title' =>  "السالم لمكافحة الحشرات",
         'description' => "شركة السالم لمكافحة الحشرات هى افضل شركة ابادة حشرات بشهادة عملائنا ,نستخدم مبيدات عالية الجودة ,جميع عمالنا مدربين على اتخاذ اللازم فى اصعب المواقف ننتظر مكالماتكم ونسعد بالخدمة",
         'en_description' => $faker->text,
-        'home_description' => $faker->text,
+        'home_description' => "",
         'en_home_description' => $faker->text,
         'phone' => "01010079798",
         'whatsapp' => "01010079798",

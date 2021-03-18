@@ -55,9 +55,9 @@
       <div class="row contactUs-row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
           <div class="contactUs-txt">
-            <h4>اتصل ب السالم لمكافحة الحشرات</h4>
+            <h4 >السالم لمكافحة الحشرات</h4>
             <span>
-              نصلك في اسرع وقت اينما كنت
+              اتصل بنا نصلك في أسرع وقت اينما كنت ... كفالة سنة على جميع أعمالنا
             </span>
           </div>
         </div>
@@ -71,9 +71,9 @@
   </section>
   <section id="article" class="articles">
     <div class="articles-hdr">
-      <span class="articles-hdr-text">
+      <h1 class="articles-hdr-text">
         {{ $article->title }}
-      </span>
+      </h1>
     </div>
     <div class="container">
       <div class="row articles-row card-deck">
@@ -156,10 +156,16 @@
         </div>
       </div>
     </div>
-    <button type="button" id="scrollToTop" class="btn btn-to-top">
+    <button type="button" id="callPhone" class="btn floatingBtn call">
       <i class="fas fa-phone-alt"></i>
     </button>
-
+    @if (isset($configration->whatsapp))
+    <a href="https://api.whatsapp.com/send?phone=+{{$configration->whatsapp}}" target="_blank">
+      <button type="button" class="btn floatingBtn whatspp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </a>
+    @endif
   </footer>
 
   <script src="{{asset('front-site/assets/js/jquery.js')}}"></script>

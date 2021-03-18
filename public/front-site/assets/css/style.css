@@ -818,10 +818,10 @@ select.form-control {
     }
 }
 
-.btn.btn-to-top {
+.btn.floatingBtn {
     width: 60px;
     height: 60px;
-    padding: 8px 9px 46px 9px;
+    padding: 7px 9px 46px 9px;
     border-radius: 50px;
     text-align: center;
     line-height: 1.42857;
@@ -830,9 +830,27 @@ select.form-control {
     background-color: rgb(26, 148, 40);
     transition: 0.5s;
     border-color: rgb(26, 148, 40);
-    font-weight: bold;
     z-index: 4000;
     position: fixed;
     bottom: 50px;
     left: 50px;
+}
+.call{
+    background-color: #A1170E !important;
+    border:2px solid #ffffff !important;
+    font-size: 25px !important;
+    padding: 10px 9px 46px 9px !important;
+
+}
+.whatspp{
+    bottom: 120px !important;
+    font-weight: 200 !important;
+    border:3px solid #ffffff !important;
+    padding: 5px 9px 46px 9px !important;
+}
+.btn.call:hover {
+    left: 60px;
+}
+.btn.whatspp:hover {
+    left: 60px;
 }

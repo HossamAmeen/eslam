@@ -60,6 +60,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -73,6 +75,12 @@
         </div>
         <div class="carousel-item">
           <img src="{{asset('front-site/assets/imgs/carousel4.jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{asset('front-site/assets/imgs/carousel5.jpg')}}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{{asset('front-site/assets/imgs/carousel6.jpg')}}" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,10 +99,12 @@
       <div class="row contactUs-row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
           <div class="contactUs-txt">
-            <h4>اتصل ب السالم لمكافحة الحشرات</h4>
+            <h1 style="font-size: 1.5rem;color:#A1170E;
+            font-weight: bold;">السالم لمكافحة الحشرات</h1>
             <span>
-              نصلك في اسرع وقت اينما كنت
+              اتصل بنا نصلك في أسرع وقت اينما كنت ... كفالة سنة على جميع أعمالنا
             </span>
+             
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -201,8 +211,7 @@
                {{$configration->en_title}}
               </span>
               <br><br>
-              شركة السالم لمكافحة الحشرات هى افضل شركة ابادة حشرات بشهادة عملائنا ,نستخدم مبيدات عالية
-              الجودة ,جميع عمالنا مدربين على اتخاذ اللازم فى اصعب المواقف ننتظر مكالماتكم ونسعد بالخدمة
+             {{$configration->home_description }}
               <br><br>
               مقرات الشركة:{{ $configration->address }}
             </p>
@@ -253,10 +262,16 @@
         </div>
       </div>
     </div>
-    <button type="button" id="scrollToTop" class="btn btn-to-top">
+    <button type="button" id="callPhone" class="btn floatingBtn call">
       <i class="fas fa-phone-alt"></i>
     </button>
-    
+    @if (isset($configration->whatsapp))
+    <a href="https://api.whatsapp.com/send?phone=+{{$configration->whatsapp}}" target="_blank">
+      <button type="button" class="btn floatingBtn whatspp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </a>
+    @endif
   </footer>
 
   <script src="{{asset('front-site/assets/js/jquery.js')}}"></script>

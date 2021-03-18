@@ -117,7 +117,7 @@
             </a>
             <a href="https://api.whatsapp.com/send?phone=+201000347725" target="_blank">
               <img class="footer-icon" src="assets/imgs/whatsappIcon.png">
-              </a>
+            </a>
           </div>
         </div>
         <div class="col-7">
@@ -127,9 +127,15 @@
         </div>
       </div>
     </div>
-    <button type="button" id="scrollToTop" class="btn btn-to-top">
+    <button type="button" id="callPhone" class="btn floatingBtn call">
       <i class="fas fa-phone-alt"></i>
     </button>
+    <a href="https://api.whatsapp.com/send?phone=+201000347725" target="_blank">
+      <button type="button" class="btn floatingBtn whatspp">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </a>
+    
 
   </footer>
 
@@ -137,7 +143,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/script.js"></script>
   <script>
-    $("#scrollToTop").click(function () {
+    $("#callPhone").click(function () {
       window.location.href = "tel:+0";
     });
   </script>
