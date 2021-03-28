@@ -65,6 +65,20 @@
                                       @enderror
                                 </div>
                             </div>
+                            @php $input = "address"; @endphp
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">العنوان</label>
+
+                                <div class="col-lg-10">
+                                    <input type="text" name="{{ $input }}"  value="{{ isset($row) ? $row->{$input} : Request::old($input) }} "
+                                      class="form-control">
+                                      @error($input)
+                                      <span class="invalid-feedback" role="alert">
+                                               <strong>{{ $message }}</strong>
+                                      </span>
+                                      @enderror
+                                </div>
+                            </div>
                             @php $input = "home_description"; @endphp
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">وصف الرئيسيه</label>
@@ -124,7 +138,7 @@
                                       @enderror
                                 </div>
                             </div>
-                            @php $input = "video"; @endphp
+                            {{-- @php $input = "video"; @endphp
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">رابط الفديو الأول</label>
 
@@ -151,7 +165,7 @@
                                       </span>
                                       @enderror
                                 </div>
-                            </div>
+                            </div> --}}
                              @php $input = "youtube"; @endphp
                             <div class="form-group">
                                 <label class="col-lg-2 control-label">رابط قناة اليوتيوب</label>
