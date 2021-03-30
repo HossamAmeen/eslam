@@ -278,7 +278,7 @@
   <script src="{{asset('front-site/assets/js/bootstrap.min.js')}}"></script>
   <script src="{{asset('front-site/assets/js/script.js')}}"></script>
   <script>
-    $("#scrollToTop").click(function () {
+    $("#callPhone").click(function () {
       window.location.href = "tel:+{{$configration->phone}}";
     });
   </script>

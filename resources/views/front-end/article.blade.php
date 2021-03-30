@@ -17,7 +17,7 @@
 <body>
 
   <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-dark-custum ">
-    <a class="navbar-brand " href="index.html">
+    <a class="navbar-brand " href="{{url('/')}}">
       <img class="navbar-brand-img" src="{{asset('front-site/assets/imgs/logo.png')}}" alt="السالم لمكافحة الحشرات">
       <p class="navbar-bran-div">
         <span>
@@ -172,8 +172,8 @@
   <script src="{{asset('front-site/assets/js/bootstrap.min.js')}}"></script>
   <script src="{{asset('front-site/assets/js/script.js')}}"></script>
   <script>
-    $("#scrollToTop").click(function () {
-      window.location.href = "tel:+0";
+      $("#callPhone").click(function () {
+      window.location.href = "tel:+{{$configration->phone}}";
     });
   </script>
 </body>
