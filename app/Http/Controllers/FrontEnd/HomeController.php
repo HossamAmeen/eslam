@@ -60,7 +60,7 @@ class HomeController extends Controller
     {
         
         $articles = Article::all()->sortByDesc("id")->take(4);
-        $services = Service::all()->sortByDesc("id")->take(4);
+        $services = Service::all()->sortByDesc("id")->take(8);
 
         if( $this->lang  == "en" ){
             $pageTitle  = "Home";

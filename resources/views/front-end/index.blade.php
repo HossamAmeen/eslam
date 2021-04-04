@@ -179,15 +179,16 @@
     <div class="container-fluid">
       <div class="row articles-row card-deck">
         @foreach($articles as $article)
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item-col">
-          <div class="card click-div">
-            <a href="{{url('article/'.$article->id)}}">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 item-col" >
+          <div class="card click-div" >
+            <a href="{{url('article/'.$article->id)}}" > 
               <img src="{{asset($article->image)}}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title text-right"><b>{{ $article->title }}</b></h5>
-                <p class="card-text">
-                 {!! mb_substr($article->description,0,200,'UTF-8') !!}.....
-                 {{-- {{ mb_substr($article->description,0,200,'UTF-8') }} --}}
+              <h5 class="card-title text-right"><b>{{ $article->title }}</b></h5>
+              <div class="card-body"  style="overflow: auto;  max-height: 200px;">
+              
+                <p class="card-text"  >
+                 {{-- {!! mb_substr($article->description,0,200,'UTF-8') !!}..... --}}
+                 {!! $article->description !!}
                 </p>
               </div>
             </a>
