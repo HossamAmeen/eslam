@@ -183,12 +183,12 @@
           <div class="card click-div" >
             <a href="{{url('article/'.$article->id)}}" > 
               <img src="{{asset($article->image)}}" class="card-img-top" alt="...">
-              <h5 class="card-title text-right"><b>{{ $article->title }}</b></h5>
-              <div class="card-body"  style="overflow: auto;  max-height: 200px;">
-              
+             
+              <div class="card-body">
+                <h5 class="card-title text-right"><b>{{ $article->title }}</b></h5>
                 <p class="card-text"  >
                  {{-- {!! mb_substr($article->description,0,200,'UTF-8') !!}..... --}}
-                 {!! $article->description !!}
+                 {{ strip_tags($article->description) }}
                 </p>
               </div>
             </a>
