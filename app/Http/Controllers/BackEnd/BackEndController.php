@@ -28,7 +28,7 @@ class BackEndController extends Controller
             $rows = $rows->with($with);
         }
         if($this->limitItem != 0)
-        $rows = $rows->orderBy('id', 'DESC')->get()->take(4);
+        $rows = $rows->orderBy('id', 'DESC')->get()->take($this->limitItem);
         else
         $rows = $rows->orderBy('id', 'DESC')->get();
 

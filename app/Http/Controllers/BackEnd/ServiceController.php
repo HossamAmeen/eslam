@@ -9,7 +9,7 @@ class ServiceController extends BackEndController
 {
     public function __construct(Service $model)
     {
-        parent::__construct($model , 4);
+        parent::__construct($model );
     }
     public function store(Request $request){
        
