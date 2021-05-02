@@ -280,7 +280,7 @@
   <script src="{{asset('front-site/assets/js/script.js')}}"></script>
   <script>
     $("#callPhone").click(function () {
-      window.location.href = "tel:+{{$configration->phone}}";
+      window.location.href = "tel:{{$configration->phone}}";
     });
   </script>
 </body>
